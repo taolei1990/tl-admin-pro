@@ -21,6 +21,13 @@
         </el-dropdown-menu>
       </template>
     </el-dropdown>
+    <span
+      class="set-icon navbar-bg-hover"
+      title="打开项目配置"
+      @click="onPanel"
+    >
+      <i class="iconfont icon-shezhi2" />
+    </span>
   </div>
 </template>
 <script setup>
@@ -30,7 +37,7 @@ import FullScreen from './fullScreen.vue'
 
 import { useNav } from '@/layout/hooks/useNav'
 import userAvatar from '../../../assets/img/user.png'
-const { logout, username, avatarsStyle } = useNav()
+const { logout, onPanel, username, avatarsStyle } = useNav()
 </script>
 <style lang="scss">
 .vertical-header-right {
