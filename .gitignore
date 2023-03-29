@@ -1,0 +1,25 @@
+node_modules
+.DS_Store
+dist
+dist-ssr
+*.local
+.eslintcache
+report.html
+package-lock.json
+npm.lock
+yarn.lock
+pnpm-lock
+.npmrc
+npm-debug.log*
+.pnpm-error.log*
+.pnpm-debug.log
+tests/**/coverage/
+# Editor directories and files
+.idea
+.husky
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+tsconfig.tsbuildinfo

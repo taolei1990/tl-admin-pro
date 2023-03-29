@@ -1,0 +1,170 @@
+{
+  "id": "3257638",
+  "name": "慢病管理",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1739228",
+      "name": "帮助说明",
+      "font_class": "bangzhushuoming",
+      "unicode": "e6f3",
+      "unicode_decimal": 59123
+    },
+    {
+      "icon_id": "16586507",
+      "name": "设置",
+      "font_class": "shezhi2",
+      "unicode": "ec0d",
+      "unicode_decimal": 60429
+    },
+    {
+      "icon_id": "21178774",
+      "name": "Group 55510",
+      "font_class": "xiaoxi",
+      "unicode": "e65e",
+      "unicode_decimal": 58974
+    },
+    {
+      "icon_id": "15644377",
+      "name": "添加团队",
+      "font_class": "tianjiatuandui",
+      "unicode": "e6c9",
+      "unicode_decimal": 59081
+    },
+    {
+      "icon_id": "18309261",
+      "name": "组织",
+      "font_class": "zuzhi",
+      "unicode": "e60c",
+      "unicode_decimal": 58892
+    },
+    {
+      "icon_id": "16200228",
+      "name": "反馈",
+      "font_class": "fankui",
+      "unicode": "e9a6",
+      "unicode_decimal": 59814
+    },
+    {
+      "icon_id": "21233252",
+      "name": "审核",
+      "font_class": "shenhe",
+      "unicode": "f4c2",
+      "unicode_decimal": 62658
+    },
+    {
+      "icon_id": "2721283",
+      "name": "点评",
+      "font_class": "dianping",
+      "unicode": "e6cc",
+      "unicode_decimal": 59084
+    },
+    {
+      "icon_id": "5793838",
+      "name": "查看",
+      "font_class": "chakan-copy",
+      "unicode": "e62b",
+      "unicode_decimal": 58923
+    },
+    {
+      "icon_id": "12218980",
+      "name": "走势",
+      "font_class": "zoushi",
+      "unicode": "e731",
+      "unicode_decimal": 59185
+    },
+    {
+      "icon_id": "12719941",
+      "name": "撤销",
+      "font_class": "chexiao",
+      "unicode": "e60e",
+      "unicode_decimal": 58894
+    },
+    {
+      "icon_id": "23863257",
+      "name": "停用",
+      "font_class": "tingyong",
+      "unicode": "e62d",
+      "unicode_decimal": 58925
+    },
+    {
+      "icon_id": "688126",
+      "name": "我的报表",
+      "font_class": "wodebaobiao",
+      "unicode": "e7a3",
+      "unicode_decimal": 59299
+    },
+    {
+      "icon_id": "9526771",
+      "name": "分类",
+      "font_class": "fenlei",
+      "unicode": "e60b",
+      "unicode_decimal": 58891
+    },
+    {
+      "icon_id": "10661527",
+      "name": "查看详情",
+      "font_class": "chakanxiangqing",
+      "unicode": "e669",
+      "unicode_decimal": 58985
+    },
+    {
+      "icon_id": "25245913",
+      "name": "转科",
+      "font_class": "zhuanke",
+      "unicode": "e60f",
+      "unicode_decimal": 58895
+    },
+    {
+      "icon_id": "6517445",
+      "name": "文件-就诊报告",
+      "font_class": "wj-jzbg",
+      "unicode": "e70c",
+      "unicode_decimal": 59148
+    },
+    {
+      "icon_id": "6517474",
+      "name": "文件-名册",
+      "font_class": "wj-mc",
+      "unicode": "e715",
+      "unicode_decimal": 59157
+    },
+    {
+      "icon_id": "6773111",
+      "name": "文件-设置说明",
+      "font_class": "wj-szsm",
+      "unicode": "e745",
+      "unicode_decimal": 59205
+    },
+    {
+      "icon_id": "6834860",
+      "name": "文件-文件修改",
+      "font_class": "wj-wjxg",
+      "unicode": "e770",
+      "unicode_decimal": 59248
+    },
+    {
+      "icon_id": "14296826",
+      "name": "导出",
+      "font_class": "daochu",
+      "unicode": "e6cb",
+      "unicode_decimal": 59083
+    },
+    {
+      "icon_id": "9512657",
+      "name": "报告",
+      "font_class": "report",
+      "unicode": "e63a",
+      "unicode_decimal": 58938
+    },
+    {
+      "icon_id": "24737115",
+      "name": "预警",
+      "font_class": "yujing",
+      "unicode": "ed21",
+      "unicode_decimal": 60705
+    }
+  ]
+}

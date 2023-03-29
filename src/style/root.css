@@ -1,0 +1,83 @@
+/* 自定义全局 CssVar */
+:root {
+
+  /* 主题色*/
+  --qw-primary: var(--el-color-primary);
+  /* 对照色*/
+  --qw-contrast: var(--el-color-primary-light-8); /*#EBF5FF*/
+
+  /*文字开始*/
+  /* 一级*/
+  --qw-text-color-1: #333333;
+  /* 二级*/
+  --qw-text-color-2: #999999;
+  /* 三级*/
+  --qw-text-color-3: #ffffff;
+  /* 四级*/
+  --qw-text-color-4: #000000;
+  /*文字结束*/
+
+  /*边框开始*/
+  /* 一级*/
+  --qw-border-color-1: #D9D9D9;
+  /*边框结束*/
+
+  /*背景开始*/
+  /* 一级背景颜色*/
+  --qw-bg-color-1: #FFF;
+  /* 二级背景颜色*/
+  --qw-bg-color-2: #F0F2F5;
+  /* 三级背景颜色*/
+  --qw-bg-color-3: #e0e0e0;
+  /* 四级背景颜色*/
+  --qw-bg-color-4: #ddeefe;
+  /*背景结束*/
+  /* tag选中背景颜色*/
+  --qw-tag-color: var(--qw-bg-color-2);
+  /* tag选中背景颜色*/
+  /*字号开始*/
+  /*默认字号*/
+  --qw-font-size-default: 16px;
+  /*重要字号*/
+  --qw-font-size-vital: 20px;
+  /*次要字号*/
+  --qw-font-size-minor: 14px;
+  /*大尺寸*/
+  --qw-font-size-large: 28px;
+  /*字号结束*/
+  /*行高开始*/
+  /*按钮行高*/
+  --qw-btn-height: 32px;
+  /*行高结束*/
+  /*间距开始*/
+  /*10间距*/
+  --qw-space-10: 10px;
+  /*20间距*/
+  --qw-space-20: 20px;
+  /*40间距*/
+  --qw-space-40: 40px;
+  /*间距结束*/
+
+  /*圆角开始*/
+  /*默认圆角*/
+  --qw-border-radius: 4px;
+  /*圆角结束*/
+
+  /*辅助色开始*/
+  /*绿*/
+  --qw-success: #4FC73A;
+  /*黄*/
+  --qw-warning: #FFA61F;
+  /*红*/
+  --qw-danger: #F5212C;
+  /*白*/
+  --qw-info: #fff;
+  /*辅助色结束*/
+  /*个性色*/
+  /* 动画时长*/
+  --qw-transition-duration: 0.016s;
+  --el-font-size-base: 16px;
+  /* 滚动条颜色 */
+  --qw-scrollbar-color: var(--el-color-primary);
+}
+

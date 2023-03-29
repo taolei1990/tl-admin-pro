@@ -1,0 +1,144 @@
+/*字号类开始*/
+.qw-font-default{
+  font-size: var(--qw-font-size-default);
+}
+.qw-font-vital {
+  font-size: var(--qw-font-size-vital);
+}
+.qw-font-minor {
+  font-size: var(--qw-font-size-minor);
+}
+/*字号类结束*/
+/*输入框图标*/
+.qw-input-suffix-icon{
+  color: var(--el-color-primary);
+  font-size: 18px;
+}
+/*标题*/
+.qw-title{
+  display: flex;
+  position: relative;
+  height: 20px;
+  padding-left: calc(var(--qw-space-10) + 4px);
+  align-items: center;
+  .qw-title-label{
+    font-weight: 600;
+    height: inherit;
+  }
+  .qw-title-subhead{
+    margin-left: var(--qw-space-10);
+  }
+  &::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    width: 4px;
+    border-radius: var(--qw-border-radius);
+    height: 20px;
+    background-color: var(--el-color-primary);
+  }
+}
+
+/*间距类开始*/
+.qw-m-5{
+  margin: 5px;
+}
+.qw-m-10{
+  margin: var(--qw-space-10);
+}
+.qw-mt-10{
+  margin-top: var(--qw-space-10);
+}
+.qw-ml-10{
+  margin-left: var(--qw-space-10);
+}
+.qw-mb-10{
+  margin-bottom: var(--qw-space-10);
+}
+.qw-mr-10{
+  margin-right: var(--qw-space-10);
+}
+.qw-m-20{
+  margin: var(--qw-space-20);
+}
+.qw-mt-20{
+  margin-top: var(--qw-space-20);
+}
+.qw-ml-20{
+  margin-left: var(--qw-space-20);
+}
+.qw-mb-20{
+  margin-bottom: var(--qw-space-20);
+}
+.qw-mr-20{
+  margin-right: var(--qw-space-20);
+}
+.qw-p-5{
+  padding: 5px;
+}
+.qw-p-10{
+  padding: var(--qw-space-10);
+}
+.qw-pt-10{
+  padding-top: var(--qw-space-10);
+}
+.qw-pl-10{
+  padding-left: var(--qw-space-10);
+}
+.qw-pb-10{
+  padding-bottom: var(--qw-space-10);
+}
+.qw-pr-10{
+  padding-right: var(--qw-space-10);
+}
+.qw-p-20{
+  padding: var(--qw-space-20);
+}
+.qw-pt-20{
+  padding-top: var(--qw-space-20);
+}
+.qw-pl-20{
+  padding-left: var(--qw-space-20);
+}
+.qw-pb-20{
+  padding-bottom: var(--qw-space-20);
+}
+.qw-pr-20{
+  padding-right: var(--qw-space-20);
+}
+
+/*间距类开始*/
+/*常用背景色开始*/
+.qw-bg-color-1{
+  background-color: var(--qw-bg-color-1);
+}
+.qw-bg-color-2{
+  background-color: var(--qw-bg-color-2);
+}
+.qw-bg-color-3{
+  background-color: var(--qw-bg-color-3);
+}
+.qw-bg-color-4{
+  background-color: var(--qw-bg-color-4);
+}
+/*常用背景色结束*/
+/*常用圆角结束*/
+.qw-border-radius{
+  border-radius: var(--qw-border-radius);
+}
+/*常用圆角结束*/
+/*常用页面样式*/
+.qw-page{
+  border-radius: var(--qw-border-radius);
+  padding: var(--qw-space-10);
+  background-color: var(--qw-bg-color-1);
+}
+/*常用页面样式*/
+
+.el-popover {
+  &.qw-menus-popover {
+    width: auto!important;
+    padding: 0;
+  }
+}
