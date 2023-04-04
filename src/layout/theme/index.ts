@@ -12,25 +12,14 @@ const themeColors = {
   default: {
     subMenuActiveText: 'var(--qw-primary)', // 选中文字色
     menuBg: '#002A52', // 菜单背景色
-    menuHover: '#4091f7',
+    menuHover: '#0084FF',
     subMenuBg: '#002140', // 二级菜单背景色
     subMenuActiveBg: 'var(--qw-bg-color-2)', // 选中背景色
     menuText: '#fff', // 菜单文字色
     sidebarLogo: '#002140',
     menuTitleHover: 'var(--qw-primary)', // Hover文字色
-    menuActiveBefore: '#4091f7'
+    menuActiveBefore: '#0084FF'
   },
-  // light: {
-  //   subMenuActiveText: 'var(--qw-primary)', // 选中文字色
-  //   menuBg: '#fff',
-  //   menuHover: '#e0ebf6',
-  //   subMenuBg: '#fff',
-  //   subMenuActiveBg: '#fff', // 选中背景色
-  //   menuText: '#fff', // 菜单文字色
-  //   sidebarLogo: '#fff',
-  //   menuTitleHover: 'var(--qw-primary)', // Hover文字色
-  //   menuActiveBefore: '#4091f7'
-  // },
   dusk: {
     subMenuActiveText: 'var(--qw-primary)', // 选中文字色
     menuBg: '#2a0608',
@@ -110,14 +99,14 @@ const themeColors = {
   },
   qwTheme: {
     subMenuActiveText: 'var(--qw-primary)', // 选中文字色
-    menuBg: '#130824',
-    menuHover: '#693ac9',
-    subMenuBg: '#000',
-    subMenuActiveBg: '#fff', // 选中背景色
+    menuBg: '#002A52', // 菜单背景色
+    menuHover: '#409eff',
+    subMenuBg: '#002140', // 二级菜单背景色
+    subMenuActiveBg: 'var(--qw-bg-color-2)', // 选中背景色
     menuText: '#fff', // 菜单文字色
-    sidebarLogo: '#1f0c38',
+    sidebarLogo: '#002140',
     menuTitleHover: 'var(--qw-primary)', // Hover文字色
-    menuActiveBefore: '#693ac9'
+    menuActiveBefore: '#409eff'
   }
 }
 

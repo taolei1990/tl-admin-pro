@@ -17,8 +17,6 @@ export function useDataThemeChange() {
   const themeColors = ref<Array<themeColorsType>>([
     /* 道奇蓝（默认） */
     { color: '#0084FF', themeColor: 'default' },
-    /* 亮白色 */
-    // { color: '#ffffff', themeColor: 'light' },
     /* 猩红色 */
     { color: '#f5222d', themeColor: 'dusk' },
     /* 橙红色 */
@@ -34,7 +32,7 @@ export function useDataThemeChange() {
     /* 深紫罗兰色 */
     { color: '#722ed1', themeColor: 'saucePurple' },
     /* 主题色 */
-    { color: '#333', themeColor: 'qwTheme' }
+    { color: '#409eff', themeColor: 'qwTheme' }
   ])
 
   const { $storage } = useGlobal<GlobalPropertiesApi>()

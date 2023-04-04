@@ -846,6 +846,9 @@ body[layout="middle"] {
         color: var(--qw-text-color-1);
       }
     }
+    .middle-tag {
+      max-width: calc(100% - 240px);
+    }
   }
   .tags-view{
     background-color: transparent!important;
