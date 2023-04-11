@@ -21,13 +21,7 @@
         </el-dropdown-menu>
       </template>
     </el-dropdown>
-<!--    <span-->
-<!--      class="set-icon navbar-bg-hover"-->
-<!--      title="打开项目配置"-->
-<!--      @click="onPanel"-->
-<!--    >-->
-<!--      <i class="iconfont icon-shezhi2" />-->
-<!--    </span>-->
+
   </div>
 </template>
 <script setup>

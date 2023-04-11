@@ -10,15 +10,10 @@
     "vue3",
     "es6"
   ],
-  "homepage": "https://github.com/xiaoxian521/pure-admin-utils/tree/main/#readme",
-  "bugs": {
-    "url": "https://github.com/xiaoxian521/pure-admin-utils/issues"
-  },
   "license": "MIT",
   "author": "xiaoxian521",
   "repository": {
     "type": "git",
-    "url": "https://github.com/xiaoxian521/pure-admin-utils"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"

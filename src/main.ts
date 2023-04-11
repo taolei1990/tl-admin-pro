@@ -5,23 +5,16 @@ import ElementPlus from 'element-plus'
 import { getServerConfig } from './config'
 import { createApp, Directive } from 'vue'
 import { MotionPlugin } from '@vueuse/motion'
-// import { useEcharts } from "@/plugins/echarts";
 import { useSvgIcon } from '@/plugins/svgIcon'
 
 import { injectResponsiveStorage } from '@/utils/responsive'
 // import { useElementPlus } from '@/plugins/element-plus'
-// import Table from "@pureadmin/table";
-// import PureDescriptions from "@pureadmin/descriptions";
 
-// 引入重置样式
-// import './style/reset.scss'
 // 导入公共样式
 import './style/index.scss'
 // 导入字体图标
 import './assets/iconfont/iconfont.js'
 import './assets/iconfont/iconfont.css'
-// 导入慢病字体图标
-// import "./assets/iconfont-cdhmp/iconfont.js";
 import './assets/iconfont-cdhmp/iconfont.css'
 const app = createApp(App)
 
@@ -51,10 +44,9 @@ getServerConfig(app).then(async config => {
   injectResponsiveStorage(app, config)
   setupStore(app)
   app
-    .use(MotionPlugin)
+    // .use(useElementPlus);
     .use(ElementPlus, { size: 'small', zIndex: 3000 })
+    .use(MotionPlugin)
     .use(useSvgIcon)
-  // .use(Table);
-  // .use(PureDescriptions);
   app.mount('#app')
 })

@@ -98,6 +98,8 @@ declare global {
     CachingAsyncRoutes?: boolean;
     TooltipEffect?: Effect;
     FontSize?: string;
+    AccessToken?: string;
+    BaseURL?: string;
   }
 
   /**
