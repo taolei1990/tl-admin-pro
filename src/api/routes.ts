@@ -1,5 +1,9 @@
-import { http } from '@/utils/http'
+import request from '@/utils/http/request'
 
-export const getAsyncRoutes = () => {
-  return http.request('get', '/getAsyncRoutes')
+export function getAsyncRoutes(data = {}) {
+  return request({
+    url: '/getAsyncRoutes',
+    method: 'get',
+    data
+  })
 }

@@ -36,6 +36,6 @@
   "Watermark": false,
   "#FontSize": "字号大小 default:默认字号（14px）,large:大字号（16px）",
   "FontSize": "large",
-  "AccessToken": "AccessToken123",
-  "BaseURL": "http://127.0.0.1:5180/"
+  "AccessToken": "93e0f164246f436db37a1995a67bfc8c",
+  "BaseURL": "http://192.168.31.217:9999/"
 }

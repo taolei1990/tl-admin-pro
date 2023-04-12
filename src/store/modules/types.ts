@@ -37,6 +37,7 @@ export type setType = {
 }
 
 export type userType = {
+  info: Object
   username?: string
   roles?: Array<string>
 }

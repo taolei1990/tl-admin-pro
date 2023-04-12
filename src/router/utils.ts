@@ -204,7 +204,7 @@ function initRouter() {
       })
     } else {
       return new Promise(resolve => {
-        getAsyncRoutes().then(({ data }) => {
+        getAsyncRoutes({}).then(({ data }) => {
           handleAsyncRoutes(cloneDeep(data))
           storageSession().setItem(key, data)
           resolve(router)
@@ -213,7 +213,7 @@ function initRouter() {
     }
   } else {
     return new Promise(resolve => {
-      getAsyncRoutes().then(({ data }) => {
+      getAsyncRoutes({}).then(({ data }) => {
         // console.log('获取路由', data)
         handleAsyncRoutes(cloneDeep(data))
         resolve(router)

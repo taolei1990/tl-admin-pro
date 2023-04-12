@@ -12,7 +12,7 @@ import {
 import { stringify } from 'qs'
 import NProgress from '../progress'
 import { getToken, formatToken } from '@/utils/auth'
-import { useUserStoreHook } from '@/store/modules/user'
+import { getConfig } from '@/config'
 
 // 相关配置请参考：www.axios-js.com/zh-cn/docs/#axios-request-config-1
 const defaultConfig: AxiosRequestConfig = {
@@ -23,6 +23,7 @@ const defaultConfig: AxiosRequestConfig = {
     'Content-Type': 'application/json',
     'X-Requested-With': 'XMLHttpRequest'
   },
+  baseURL: getConfig().BaseURL,
   // 数组格式参数序列化（https://github.com/axios/axios/issues/5142）
   paramsSerializer: {
     serialize: stringify as unknown as CustomParamsSerializer
@@ -77,36 +78,9 @@ class PureHttp {
         return whiteList.some(v => config.url.indexOf(v) > -1)
           ? config
           : new Promise(resolve => {
-              const data = getToken()
-              if (data) {
-                const now = new Date().getTime()
-                const expired = parseInt(data.expires) - now <= 0
-                if (expired) {
-                  if (!PureHttp.isRefreshing) {
-                    PureHttp.isRefreshing = true
-                    // token过期刷新
-                    useUserStoreHook()
-                      .handRefreshToken({ refreshToken: data.refreshToken })
-                      .then(res => {
-                        const token = res.data.accessToken
-                        config.headers['Authorization'] = formatToken(token)
-                        PureHttp.requests.forEach(cb => cb(token))
-                        PureHttp.requests = []
-                      })
-                      .finally(() => {
-                        PureHttp.isRefreshing = false
-                      })
-                  }
-                  resolve(PureHttp.retryOriginalRequest(config))
-                } else {
-                  config.headers['Authorization'] = formatToken(
-                    data.accessToken
-                  )
-                  resolve(config)
-                }
-              } else {
-                resolve(config)
-              }
+              const accessToken = getToken()
+              config.headers['Authorization'] = formatToken(accessToken)
+              resolve(config)
             })
       },
       error => {

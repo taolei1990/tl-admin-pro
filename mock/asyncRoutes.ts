@@ -12,8 +12,8 @@ const router = [
     path: '/permission',
     meta: {
       title: '权限管理',
-      icon: 'lollipop',
-      rank: 10
+      icon: 'menu2',
+      rank: 2
     },
     children: [
       {
@@ -139,7 +139,7 @@ const router = [
         path: '/test/test1/test1Index',
         name: 'Test1Index',
         meta: {
-          title: '页面1',
+          title: '测试接口',
           icon: 'menu7'
         }
       },
@@ -149,7 +149,17 @@ const router = [
         meta: {
           title: '页面2',
           icon: 'menu6'
-        }
+        },
+        children: [
+          {
+            path: '/test/test3/test3-1/test3-1Index',
+            name: 'test3-1Index',
+            meta: {
+              title: '页面2-1',
+              showParent: true
+            }
+          }
+        ]
       },
       {
         path: '/test/test3/test3Index',
@@ -161,20 +171,10 @@ const router = [
         },
         children: [
           {
-            path: '/test/test3/test3-1/test3-1Index',
-            name: 'test3-1Index',
-            meta: {
-              title: '页面3-1',
-              icon: 'menu4',
-              showParent: true
-            }
-          },
-          {
             path: '/test/test3/test3-1/test3-2Index',
             name: 'test3-2Index',
             meta: {
-              title: '页面3-2',
-              icon: 'menu1'
+              title: '页面3-2'
             }
           },
           {
@@ -182,7 +182,6 @@ const router = [
             name: 'test3-3Index',
             meta: {
               title: '页面3-3',
-              icon: 'menu3',
               keepAlive: true
             }
           }

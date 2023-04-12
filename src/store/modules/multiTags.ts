@@ -1,9 +1,8 @@
 import { defineStore } from 'pinia'
 import { store } from '@/store'
-import { isEqual } from '@pureadmin/utils'
 import { routerArrays } from '@/layout/types'
 import { multiType, positionType } from './types'
-import { isUrl, storageLocal } from '@pureadmin/utils'
+import { isUrl, storageLocal, isEqual } from '@pureadmin/utils'
 
 export const useMultiTagsStore = defineStore({
   id: 'qw-multiTags',

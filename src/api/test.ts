@@ -1,6 +1,6 @@
 import { http } from '@/utils/http'
 
-// 测试api
-export function TestLogin(data) {
-  return http.request('post', '/refreshToken', { data })
+/** 登录 */
+export const GetOrgTreeList = (data?: object) => {
+  return http.request('post', '/api/UHRMComm/GetOrgTreeList', { data })
 }

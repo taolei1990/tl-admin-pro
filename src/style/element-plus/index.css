@@ -8733,7 +8733,6 @@
 
 .el-menu--vertical:not(.el-menu--collapse):not(.el-menu--popup-container) .el-menu-item, .el-menu--vertical:not(.el-menu--collapse):not(.el-menu--popup-container) .el-menu-item-group__title, .el-menu--vertical:not(.el-menu--collapse):not(.el-menu--popup-container) .el-sub-menu__title {
   white-space: nowrap;
-  padding-left: calc(var(--el-menu-base-level-padding) + var(--el-menu-level-padding))
 }
 
 .el-menu--vertical:not(.el-menu--collapse):not(.el-menu--popup-container) .el-sub-menu__title {

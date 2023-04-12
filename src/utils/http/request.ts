@@ -1,7 +1,7 @@
 import axios from 'axios'
 import { ElMessage } from 'element-plus'
 import { getConfig } from '@/config'
-import { getToken } from '@/utils/auth'
+import { getToken, formatToken } from '@/utils/auth'
 const { BaseURL, AccessToken } = getConfig()
 const service: any = axios.create({
   baseURL: BaseURL,
@@ -11,7 +11,7 @@ const service: any = axios.create({
 service.interceptors.request.use(
   config => {
     config.headers['Content-Type'] = 'application/json'
-    const token = getToken()
+    const token = formatToken(getToken())
     if (token) {
       config.headers.Authorization = token
     } else {

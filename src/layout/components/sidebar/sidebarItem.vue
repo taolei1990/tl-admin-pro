@@ -160,8 +160,10 @@ function resolvePath(routePath) {
       :class="{ 'submenu-title-noDropdown': !isNest }"
       :style="getNoDropdownStyle"
     >
-      <div class="sub-menu-icon" v-if="toRaw(props.item.meta.icon)">
+      <div class="sub-menu-icon">
         <svg-icon
+          v-if="toRaw(props.item.meta.icon)"
+          size="18px"
           :name="
             toRaw(onlyOneChild.meta.icon) ||
             (props.item.meta && toRaw(props.item.meta.icon))
@@ -233,11 +235,12 @@ function resolvePath(routePath) {
     :index="resolvePath(props.item.path)"
   >
     <template #title>
-      <div v-if="toRaw(props.item.meta.icon)" class="sub-menu-icon">
-        <!--        <component-->
-        <!--          :is="useRenderIcon(props.item.meta && toRaw(props.item.meta.icon))"-->
-        <!--        />-->
-        <svg-icon :name="props.item.meta && toRaw(props.item.meta.icon)" />
+      <div class="sub-menu-icon">
+        <svg-icon
+          v-if="toRaw(props.item.meta.icon)"
+          size="18px"
+          :name="props.item.meta && toRaw(props.item.meta.icon)"
+        />
       </div>
       <span v-if="layout === 'horizontal' || layout === 'suspend'">
         {{ props.item.meta.title }}
@@ -281,3 +284,6 @@ function resolvePath(routePath) {
     />
   </el-sub-menu>
 </template>
+<style lang="scss">
+
+</style>
